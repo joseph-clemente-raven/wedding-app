@@ -26,10 +26,10 @@ export default function Navbar() {
       }`}
     >
       <div className="flex justify-center px-1 py-8 sm:p-4">
-        <Link href="/" className="hover:text-gray-800 mx-4">Home</Link>
-        <Link href="/ourstory" className="hover:text-gray-800 mx-4">Our Story</Link>
-        <Link href="/wedding" className="hover:text-gray-800 mx-4">Wedding Details</Link>
-        <Link href="/photos" className="hover:text-gray-800 mx-4">Photos</Link>
+        <Link href="/" className="hover:text-gray-800 mx-4 text-gray-800">Home</Link>
+        <Link href="/ourstory" className="hover:text-gray-800 text-gray-800 mx-4">Our Story</Link>
+        <Link href="/wedding" className="hover:text-gray-800 text-gray-800 mx-4">Wedding Details</Link>
+        <Link href="/photos" className="hover:text-gray-800 text-gray-800 mx-4">Photos</Link>
       </div>
     </nav>
   );

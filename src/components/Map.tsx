@@ -21,13 +21,13 @@ import L from 'leaflet';
 
 // Define custom icons to avoid default icon issues
 const customIcon = new L.Icon({
-  iconRetinaUrl: '/icons8-location.gif',
+  iconRetinaUrl: 'icons8-location.gif',
   iconSize: [50, 50],
 });
 
 // Define custom icons to avoid default icon issues
 const customCarIcon = new L.Icon({
-  iconRetinaUrl: '/icons8-car.gif',
+  iconRetinaUrl: 'icons8-car.gif',
   iconSize: [50, 50],
 });
 
