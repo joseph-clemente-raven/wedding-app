@@ -26,7 +26,7 @@ export default function OurStory() {
       </div>
       <div className='flex flex-col flex-1 justify-center px-2 sm:px-20 gap-3'>
           <p className='font-semibold text-xl'>Our Story</p>
-          <p className='font-light'>From a simple connection on Litmatch to a love that transcends distance, their journey has been one of unwavering commitment and deepening bonds. Despite the miles between them, their hearts grew closer with every message and call. Now, they're ready to turn their long-distance love into a lifetime together.</p>
+          <p className='font-light'>From a simple connection on Litmatch to a love that transcends distance, their journey has been one of unwavering commitment and deepening bonds. Despite the miles between them, their hearts grew closer with every message and call. Now, they&apos;re ready to turn their long-distance love into a lifetime together.</p>
           <button className='self-start z-10 p-3 text-xs text-white bg-green-950'>See More</button>
       </div>
       <div className='flex flex-1'>

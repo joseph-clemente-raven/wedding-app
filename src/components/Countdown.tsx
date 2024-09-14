@@ -17,7 +17,7 @@ export default function Countdown() {
 
         const countdown = setInterval(() => {
             const now = new Date();
-            const difference = targetDate - now;
+            const difference: number = targetDate.getTime() - now.getTime();
 
             if (difference <= 0) {
                 clearInterval(countdown);

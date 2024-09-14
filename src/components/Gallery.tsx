@@ -27,7 +27,7 @@ export default function Gallery() {
             <div className='flex flex-col gap-2 relative'>
                 <p className='text-center font-semibold text-2xl text-green-950'>Gallery</p>
                 <p className='text-center font-bold text-green-950'>Moments of Forever: A Wedding Journey</p>
-                <p className='text-center font-light text-green-950'>Capture and relive the magic of your wedding day with "Moments of Forever," a gallery preserving every joyful, heartfelt moment.</p><br/>
+                <p className='text-center font-light text-green-950'>Capture and relive the magic of your wedding day with &quot;Moments of Forever,&quot; a gallery preserving every joyful, heartfelt moment.</p><br/>
                 <div className='absolute -top-8 left-80 opacity-50'>
                     <Image
                         src={'/line4.png'}
