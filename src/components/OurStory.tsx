@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function OurStory() {
   return (
-    <div className='flex flex-col sm:flex-row relative'>
+    <div className='flex flex-col sm:flex-row relative gap-4'>
       <div className='absolute -bottom-20 -right-80 opacity-30'>
           <Image
               src={'/side4.png'}
@@ -24,7 +24,7 @@ export default function OurStory() {
           alt='flower'
         />
       </div>
-      <div className='flex flex-col flex-1 justify-center px-20 gap-3'>
+      <div className='flex flex-col flex-1 justify-center px-2 sm:px-20 gap-3'>
           <p className='font-semibold text-xl'>Our Story</p>
           <p className='font-light'>From a simple connection on Litmatch to a love that transcends distance, their journey has been one of unwavering commitment and deepening bonds. Despite the miles between them, their hearts grew closer with every message and call. Now, they're ready to turn their long-distance love into a lifetime together.</p>
           <button className='self-start z-10 p-3 text-xs text-white bg-green-950'>See More</button>

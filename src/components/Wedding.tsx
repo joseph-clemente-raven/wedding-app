@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Wedding() {
     return (
-        <div className='flex flex-col py-36'>
+        <div className='flex flex-col py-10 sm:py-36'>
             <div className='flex flex-col gap-2 relative'>
                 <p className='text-center font-semibold text-2xl'>Wedding Details</p><br/>
                 <div className='absolute -top-24 left-80 opacity-60'>
@@ -19,7 +19,7 @@ export default function Wedding() {
                 </div>
                 <p className='text-center font-light'>Join Us as We Say <span className='font-bold'>{`'`} I Do {`'`}</span>: Everything You Need to Know for Our Special Day</p>
             </div>
-            <div className='flex flex-row py-10 gap-4 px-0'>
+            <div className='flex flex-col sm:flex-row py-2 sm:py-10 gap-1 sm:gap-4 px-0'>
                 <div className='flex flex-1'>
                     <div className='flex flex-col shadow-md p-4 text-center'>
                         <div className='flex flex-1'>

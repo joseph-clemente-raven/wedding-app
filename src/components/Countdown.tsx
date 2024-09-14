@@ -36,14 +36,14 @@ export default function Countdown() {
     }, []);
 
     return (
-        <div className='flex relative items-center self-center gap-4 flex-row py-16'>
+        <div className='flex relative items-center self-center gap-1 sm:gap-4 flex-row py-16'>
             <div className='absolute -top-8 -left-96 opacity-30'>
                 <Image
                     src={'/side3.png'}
                     width={300}
                     height={300}
                     alt='flower'
-                    objectFit='cover'
+                    className='object-cover w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40'
                 />
             </div>
             <div className='relative'>
@@ -53,8 +53,8 @@ export default function Countdown() {
                         alt="Avatar"
                         width={160}
                         height={160}
-                        objectFit="cover"
-                        className='rounded-full'/>
+                        className='hidden sm:block rounded-full object-cover w-16 h-16 sm:w-20 sm:h-20 md:w-32 md:h-32'
+                    />
                 </div>
                 <div className='absolute -right-6 -bottom-6'>
                     <Image
@@ -62,22 +62,22 @@ export default function Countdown() {
                         alt="Avatar"
                         width={100}
                         height={100}
-                        objectFit="cover"
-                        className='rounded-full'/>
+                        className='hidden sm:block rounded-full object-cover w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24'
+                    />
                 </div>
                 <Image
                     src="/img.jpg"
                     alt="Avatar"
                     width={150}
                     height={150}
-                    objectFit="cover"
-                    className='rounded-full'/>
+                    className='rounded-full hidden object-cover w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40'
+                />
             </div>
-            <div className="ml-6">
-                <p className="text-2xl font-semibold text-green-950">Kimmy & Joseph</p>
-                <div className='flex flex-row gap-6 items-center'>
+            <div className="ml-0 sm:ml-6">
+                <p className="text-xl sm:text-2xl font-semibold text-green-950">Kimmy & Joseph</p>
+                <div className='flex flex-row gap-1 sm:gap-6 items-center'>
                     <div className="flex flex-col text-center gap-2">
-                        <p className='text-4xl font-semibold text-green-950'>{timeLeft.days}</p>
+                        <p className='text-xl sm:text-4xl font-semibold text-green-950'>{timeLeft.days}</p>
                         <p className='text-xs font-light text-green-950'>Days</p>
                     </div>
                     <Image
@@ -85,10 +85,10 @@ export default function Countdown() {
                         alt="Icon"
                         width={80}
                         height={80}
-                        objectFit="cover"
-                        className='rounded-full'/>
+                        className='rounded-full object-cover w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16'
+                    />
                     <div className="flex flex-col text-center gap-2">
-                        <p className='text-4xl font-semibold text-green-950'>{timeLeft.hours}</p>
+                        <p className='text-xl sm:text-4xl font-semibold text-green-950'>{timeLeft.hours}</p>
                         <p className='text-xs font-light text-green-950'>Hours</p>
                     </div>
                     <Image
@@ -96,10 +96,10 @@ export default function Countdown() {
                         alt="Icon"
                         width={100}
                         height={100}
-                        objectFit="cover"
-                        className='rounded-full'/>
+                        className='rounded-full object-cover w-10 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24'
+                    />
                     <div className="flex flex-col text-center gap-2">
-                        <p className='text-4xl font-semibold text-green-950'>{timeLeft.minutes}</p>
+                        <p className='text-xl sm:text-4xl font-semibold text-green-950'>{timeLeft.minutes}</p>
                         <p className='text-xs font-light text-green-950'>Minutes</p>
                     </div>
                     <Image
@@ -107,10 +107,10 @@ export default function Countdown() {
                         alt="Icon"
                         width={100}
                         height={100}
-                        objectFit="cover"
-                        className='rounded-full'/>
+                        className='rounded-full object-cover w-10 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24'
+                    />
                     <div className="flex flex-col text-center gap-2">
-                        <p className='text-4xl font-semibold text-green-950'>{timeLeft.seconds}</p>
+                        <p className='text-xl sm:text-4xl font-semibold text-green-950'>{timeLeft.seconds}</p>
                         <p className='text-xs font-light text-green-950'>Seconds</p>
                     </div>
                 </div>
