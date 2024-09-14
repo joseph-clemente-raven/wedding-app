@@ -7,7 +7,7 @@ export default function Footer() {
     <div className='pb-20 pt-10 flex flex-row justify-center items-center'>
       <p className='font-semibold text-green-950'>© 2024 Kimmy</p>
       <Image
-        src={'/ring.png'}
+        src={'ring.png'}
         width={60}
         height={60}
         alt='ring'

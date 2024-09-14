@@ -39,7 +39,7 @@ export default function Countdown() {
         <div className='flex relative items-center self-center gap-1 sm:gap-4 flex-row py-16'>
             <div className='absolute -top-8 -left-96 opacity-30'>
                 <Image
-                    src={'/side3.png'}
+                    src={'side3.png'}
                     width={300}
                     height={300}
                     alt='flower'
@@ -49,7 +49,7 @@ export default function Countdown() {
             <div className='relative'>
                 <div className='absolute -left-12 -top-20'>
                     <Image
-                        src="/10.png"
+                        src="10.png"
                         alt="Avatar"
                         width={160}
                         height={160}
@@ -58,7 +58,7 @@ export default function Countdown() {
                 </div>
                 <div className='absolute -right-6 -bottom-6'>
                     <Image
-                        src="/9.png"
+                        src="9.png"
                         alt="Avatar"
                         width={100}
                         height={100}
@@ -66,7 +66,7 @@ export default function Countdown() {
                     />
                 </div>
                 <Image
-                    src="/img.jpg"
+                    src="img.jpg"
                     alt="Avatar"
                     width={150}
                     height={150}
@@ -81,7 +81,7 @@ export default function Countdown() {
                         <p className='text-xs font-light text-green-950'>Days</p>
                     </div>
                     <Image
-                        src="/2.png"
+                        src="2.png"
                         alt="Icon"
                         width={80}
                         height={80}
@@ -92,7 +92,7 @@ export default function Countdown() {
                         <p className='text-xs font-light text-green-950'>Hours</p>
                     </div>
                     <Image
-                        src="/5.png"
+                        src="5.png"
                         alt="Icon"
                         width={100}
                         height={100}
@@ -103,7 +103,7 @@ export default function Countdown() {
                         <p className='text-xs font-light text-green-950'>Minutes</p>
                     </div>
                     <Image
-                        src="/sage.png"
+                        src="sage.png"
                         alt="Icon"
                         width={100}
                         height={100}

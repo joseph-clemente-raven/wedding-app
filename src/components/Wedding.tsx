@@ -10,7 +10,7 @@ export default function Wedding() {
                 <p className='text-center font-semibold text-2xl'>Wedding Details</p><br/>
                 <div className='absolute -top-24 left-80 opacity-60'>
                     <Image
-                        src={'/line2.png'}
+                        src={'line2.png'}
                         width={300}
                         height={5}
                         alt='flower'

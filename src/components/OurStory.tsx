@@ -8,7 +8,7 @@ export default function OurStory() {
     <div className='flex flex-col sm:flex-row relative gap-4'>
       <div className='absolute -bottom-20 -right-80 opacity-30'>
           <Image
-              src={'/side4.png'}
+              src={'side4.png'}
               width={300}
               height={300}
               alt='flower'
@@ -17,7 +17,7 @@ export default function OurStory() {
       </div>
       <div className='absolute left-0 -top-14 opacity-20'>
         <Image
-          src={'/1.png'}
+          src={'1.png'}
           width={500}
           height={500}
           objectFit='cover'
@@ -31,7 +31,7 @@ export default function OurStory() {
       </div>
       <div className='flex flex-1'>
           <Image
-              src={'/img1.jpg'}
+              src={'img1.jpg'}
               alt='story'
               height={400}
               width={400}

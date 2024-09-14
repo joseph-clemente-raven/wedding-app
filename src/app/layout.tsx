@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Calligraffitti } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 
-const inter = Calligraffitti({ weight: '400', preload: false });
+const inter = Inter({ weight: '400', preload: false });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
