@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className='flex relative h-screen flex-col'>
         <Image
-            src="/banner.jpg"
+            src="banner.jpg"
             alt="Banner Image"
             layout="fill"
             objectFit="cover"

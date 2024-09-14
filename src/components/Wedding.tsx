@@ -25,7 +25,7 @@ export default function Wedding() {
                         <div className='flex flex-1'>
                             <div className="w-full aspect-square">
                                 <Image
-                                    src='/church.jpg'
+                                    src='church.jpg'
                                     alt='church'
                                     width={1200}
                                     height={1200}
@@ -44,7 +44,7 @@ export default function Wedding() {
                     <div className='shadow-md p-4 text-center gap-10'>
                         <div className="w-full aspect-square">
                             <Image
-                                src='/reception.jpg'
+                                src='reception.jpg'
                                 alt='reception'
                                 width={1200}
                                 height={1200}
@@ -62,7 +62,7 @@ export default function Wedding() {
                     <div className='shadow-md p-4 text-center gap-10'>
                         <div className="w-full aspect-square">
                             <Image
-                                src='/weddingday.jpg'
+                                src='weddingday.jpg'
                                 alt='weddingday'
                                 width={1200}
                                 height={1200}
