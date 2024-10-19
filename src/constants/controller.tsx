@@ -1,1 +1,1 @@
-export const setup = '/';
+export const setup = './';
