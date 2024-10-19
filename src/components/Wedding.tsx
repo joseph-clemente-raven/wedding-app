@@ -1,19 +1,20 @@
 'use client'
 
+import { setup } from '@/constants/controller'
 import Image from 'next/image'
 import React from 'react'
 
 export default function Wedding() {
     return (
-        <div className='flex flex-col py-10 sm:py-36'>
+        <div className='flex flex-col pt-10 pb-10 sm:pt-36 sm:pb-10'>
             <div className='flex flex-col gap-2 relative'>
                 <p className='text-center font-semibold text-2xl'>Wedding Details</p><br/>
-                <div className='absolute -top-24 left-80 opacity-60'>
+                <div className='absolute -top-24 left-0 sm:left-80 opacity-60'>
                     <Image
-                        src={'line2.png'}
+                        src={`${setup}line2.png`}
                         width={300}
                         height={5}
-                        alt='flower'
+                        alt='line'
                         objectFit='cover'
                     />
                 </div>
@@ -25,7 +26,7 @@ export default function Wedding() {
                         <div className='flex flex-1'>
                             <div className="w-full aspect-square">
                                 <Image
-                                    src='church.jpg'
+                                    src={`${setup}church.jpg`}
                                     alt='church'
                                     width={1200}
                                     height={1200}
@@ -44,7 +45,7 @@ export default function Wedding() {
                     <div className='shadow-md p-4 text-center gap-10'>
                         <div className="w-full aspect-square">
                             <Image
-                                src='reception.jpg'
+                                src={`${setup}reception.jpg`}
                                 alt='reception'
                                 width={1200}
                                 height={1200}
@@ -62,7 +63,7 @@ export default function Wedding() {
                     <div className='shadow-md p-4 text-center gap-10'>
                         <div className="w-full aspect-square">
                             <Image
-                                src='weddingday.jpg'
+                                src={`${setup}C1.png`}
                                 alt='weddingday'
                                 width={1200}
                                 height={1200}

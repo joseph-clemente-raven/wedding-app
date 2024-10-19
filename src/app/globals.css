@@ -28,3 +28,34 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.detective-link {
+  color: #333; /* A darker, mysterious color */
+  text-decoration: none;
+  border-bottom: 2px dotted #333; /* Dotted underline to suggest hidden info */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.detective-link:hover {
+  color: #000; /* Slightly change the color on hover */
+  border-bottom: 2px solid #000; /* Solid underline on hover */
+}
+
+
+.text-outline { 
+  text-shadow: '1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff' 
+}
+
+/* styles.css */
+@keyframes rumble {
+  0% { transform: translate(1px, 0); }
+  20% { transform: translate(-1px, 0); }
+  40% { transform: translate(1px, 0); }
+  60% { transform: translate(-1px, 0); }
+  80% { transform: translate(1px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.rumble {
+  animation: rumble 0.5s infinite;
+}

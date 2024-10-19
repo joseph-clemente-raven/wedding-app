@@ -13,12 +13,12 @@ export default function Home() {
     return (
         <main className='flex flex-col overflow-hidden'>
             <Header/>
-            <div className='flex flex-col px-10 bg-[#FBFCF8] w-full sm:w-[70%] self-center'>
+            <div className='flex flex-col px-10 pb-10 bg-[#FBFCF8] w-full sm:w-[70%] self-center'>
                 <Countdown/>
                 <OurStory/>
                 <Wedding/>
-                <Gallery/>
                 <Map/>
+                <Gallery/>
             </div>
             <Footer/>
         </main>

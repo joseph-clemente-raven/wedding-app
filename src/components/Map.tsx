@@ -1,18 +1,3 @@
-// Define types for API response
-interface Coordinate {
-  type: string;
-  coordinates: [number, number][];
-}
-
-interface Feature {
-  type: string;
-  geometry: Coordinate;
-}
-
-interface ApiResponse {
-  features: Feature[];
-}
-
 // components/Map.js
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
@@ -25,7 +10,6 @@ const customIcon = new L.Icon({
   iconSize: [50, 50],
 });
 
-// Define custom icons to avoid default icon issues
 const customCarIcon = new L.Icon({
   iconRetinaUrl: 'icons8-car.gif',
   iconSize: [50, 50],
@@ -67,27 +51,59 @@ const Map = () => {
     }
   }, [userLocation]);
 
+  // Function to redirect to Google Maps
+  const redirectToGoogleMaps = () => {
+    const googleMapsBaseUrl = 'https://www.google.com/maps/dir/';
+    if (userLocation) {
+      const start = `${userLocation[0]},${userLocation[1]}`;
+      const end = `${destination[0]},${destination[1]}`;
+      window.open(`${googleMapsBaseUrl}${start}/${end}/`, '_blank');
+    } else {
+      window.open(`https://www.google.com/maps/search/?api=1&query=${destination[0]},${destination[1]}`, '_blank');
+    }
+  };
+
   return (
-    <MapContainer center={destination} zoom={13} style={{ height: 300, width: "100%" }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
+    <div className='mb-10'>
+      <MapContainer center={destination} zoom={13} style={{ height: 300, width: "100%" }}>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        {userLocation && (
+          <>
+            <Marker position={userLocation} icon={customCarIcon}>
+              <Popup>Your Location</Popup>
+            </Marker>
+            <Polyline positions={route} color="blue" />
+          </>
+        )}
+        <Marker position={destination} icon={customIcon}>
+          <Popup>
+            <span className='font-bold'>Kimmy & Joseph - Wedding Celebration</span> <br />
+            <span className='font-light'>Join Us at Our Lady of Mt. Carmel Parish Church, Villarin St., Cagayan De Oro City, Misamis Oriental.</span>
+          </Popup>
+        </Marker>
+      </MapContainer>
+      
       {userLocation && (
-        <>
-          <Marker position={userLocation} icon={customCarIcon}>
-            <Popup>Your Location</Popup>
-          </Marker>
-          <Polyline positions={route} color="blue" />
-        </>
+        <div style={{ marginTop: '16px', textAlign: 'center' }}>
+          <button
+            style={{
+              padding: '6px 20px',
+              backgroundColor: 'green',
+              color: 'white',
+              border: 'none',
+              borderRadius: '5px',
+              cursor: 'pointer',
+            }}
+            onClick={redirectToGoogleMaps}
+          >
+            Get Driving Directions
+          </button>
+        </div>
       )}
-      <Marker position={destination} icon={customIcon}>
-        <Popup>
-          <span className='font-bold'>Kimmy & Joseph - Wedding Celebration</span> <br />
-          <span className='font-light'>Join Us at Our Lady of Mt. Carmel Parish Church, Villarin St., Cagayan De Oro City, Misamis Oriental.</span>
-        </Popup>
-      </Marker>
-    </MapContainer>
+    </div>
   );
 };
 
