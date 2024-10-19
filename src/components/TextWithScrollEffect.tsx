@@ -41,13 +41,15 @@ const TextWithScrollEffect = ({ text }) => {
             }
         );
 
-        if (textRef.current) {
-            observer.observe(textRef.current);
+        const currentRef = textRef.current; // Store the current ref value
+
+        if (currentRef) {
+            observer.observe(currentRef);
         }
 
         return () => {
-            if (textRef.current) {
-                observer.unobserve(textRef.current);
+            if (currentRef) { // Use the stored value in cleanup
+                observer.unobserve(currentRef);
             }
         };
     }, []);
