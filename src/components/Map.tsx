@@ -15,6 +15,15 @@ const customCarIcon = new L.Icon({
   iconSize: [50, 50],
 });
 
+interface ApiResponse {
+  features: {
+    geometry: {
+      coordinates: [number, number][];
+    };
+  }[];
+}
+
+
 const destination: [number, number] = [8.4811435794063, 124.62944979563575]; // Church location
 
 const Map = () => {
