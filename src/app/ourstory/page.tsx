@@ -5,20 +5,11 @@ import TextWithScrollEffect from '@/components/TextWithScrollEffect';
 import { setup } from '@/constants/controller';
 import { Tangerine } from 'next/font/google';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const tangerine = Tangerine({ weight: '700', preload: false });
 
 export default function OurStoryScreen() {
-
-
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const handleLoad = () => setLoaded(true);
-    window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
-  }, []);
 
   return (
     <main className='w-full min-h-screen flex flex-col'>

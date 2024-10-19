@@ -1,10 +1,12 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 
-// Helper function to split text into spans by word
 export const splitTextToSpans = (text, isVisible) => {
+    // Escape single quotes
+    const escapedText = text.replace(/'/g, "&#39;");
+    
     // Split the text into words
-    const words = text.split(' ');
+    const words = escapedText.split(' ');
 
     return (
         <>
@@ -20,6 +22,7 @@ export const splitTextToSpans = (text, isVisible) => {
         </>
     );
 };
+
 
 const TextWithScrollEffect = ({ text }) => {
     const [isVisible, setIsVisible] = useState(false);
