@@ -27,21 +27,27 @@ interface ApiResponse {
 const destination: [number, number] = [8.4811435794063, 124.62944979563575]; // Church location
 
 const Map = () => {
+  
   const [userLocation, setUserLocation] = useState<[number, number] | null>(null);
   const [route, setRoute] = useState<[number, number][]>([]);
-
   useEffect(() => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
+      const watchId = navigator.geolocation.watchPosition(
         position => {
           setUserLocation([position.coords.latitude, position.coords.longitude] as [number, number]);
         },
         error => {
           console.error('Error getting user location:', error);
-        }
+        },
+        { enableHighAccuracy: true, maximumAge: 10000, timeout: 5000 } // Optional settings for better accuracy
       );
+  
+      // Cleanup function to stop watching the position when the component unmounts
+      return () => {
+        navigator.geolocation.clearWatch(watchId);
+      };
     }
-  }, []);
+  }, []);  
 
   useEffect(() => {
     if (userLocation) {
