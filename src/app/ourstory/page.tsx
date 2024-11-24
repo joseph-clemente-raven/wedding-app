@@ -121,14 +121,14 @@ export default function OurStoryScreen() {
             />
           </div>
           <div className='flex flex-1 items-center'>
-            <TextWithScrollEffect text={`Like all relationships, theirs had its share of ups and downs. They encountered misunderstandings along the way but always managed to talk things out and find common ground, proving that their connection was strong enough to overcome any obstacle. When Kimmy's birthday approached, Joseph planned a special celebration just for her, wanting to fill her day with happiness and laughter. Later on, Kimmy traveled to Bulacan to meet Joseph's family and enjoy a concert featuring her favorite Korean artist, an experience that deepened their connection and created even more cherished memories.`} />
+            <TextWithScrollEffect text={`Like all relationships, theirs had its share of ups and downs. They encountered misunderstandings along the way but always managed to talk things out and find common ground, proving that their connection was strong enough to overcome any obstacle. When Kimmy${"'"}s birthday approached, Joseph planned a special celebration just for her, wanting to fill her day with happiness and laughter. Later on, Kimmy traveled to Bulacan to meet Joseph's family and enjoy a concert featuring her favorite Korean artist, an experience that deepened their connection and created even more cherished memories.`} />
           </div>
         </div>
 
         {/* Story 4 */}
         <div className='flex flex-col-reverse sm:flex-row px-10 gap-6'>
           <div className='flex flex-1 items-center'>
-            <TextWithScrollEffect text={`As time went by, Joseph realized that Kimmy was the one he wanted to spend his life with. He felt it in his heart and wanted to take the next step in their love story by proposing to her. With excitement and nervousness, he asked for his parents' blessing, feeling ready to commit to a future together. Their journey is a beautiful example of how love can bridge any distance, bringing joy, laughter, and shared dreams into their lives. Together, Joseph and Kimmy found a love that was real and lasting, proving that when two people are meant to be together, nothing can stand in their way. Their love story is a testament to the power of connection, showing that true love can overcome any barrier.`} />
+            <TextWithScrollEffect text={`As time went by, Joseph realized that Kimmy was the one he wanted to spend his life with. He felt it in his heart and wanted to take the next step in their love story by proposing to her. With excitement and nervousness, he asked for his parents${"'"} blessing, feeling ready to commit to a future together. Their journey is a beautiful example of how love can bridge any distance, bringing joy, laughter, and shared dreams into their lives. Together, Joseph and Kimmy found a love that was real and lasting, proving that when two people are meant to be together, nothing can stand in their way. Their love story is a testament to the power of connection, showing that true love can overcome any barrier.`} />
           </div>
           <div className="w-full flex flex-1">
             <iframe

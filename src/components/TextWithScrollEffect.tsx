@@ -4,10 +4,10 @@ import React, { useEffect, useRef, useState, ReactNode } from 'react';
 // Function to split text into spans with visibility effect
 export const splitTextToSpans = (text: string, isVisible: boolean): ReactNode => {
     // Escape single quotes in text
-    const escapedText = text.replace(/'/g, '&#39;');
+    // const escapedText = text.replace(/'/g, '&#39;');
 
     // Split the text into words
-    const words = escapedText.split(' ');
+    const words = text.split(' ');
 
     return (
         <>
