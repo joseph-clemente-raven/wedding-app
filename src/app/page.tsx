@@ -5,9 +5,9 @@ import Gallery from '@/components/Gallery';
 import Header from '@/components/Header';
 import OurStory from '@/components/OurStory';
 import Wedding from '@/components/Wedding';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
-const Map = dynamic(() => import('@/components/Map'), { ssr: false });
+// const Map = dynamic(() => import('@/components/Map'), { ssr: false });
 
 export default function Home() {
     return (
@@ -17,7 +17,7 @@ export default function Home() {
                 <Countdown/>
                 <OurStory/>
                 <Wedding/>
-                <Map/>
+                {/* <Map/> */}
                 <Gallery/>
             </div>
             <Footer/>

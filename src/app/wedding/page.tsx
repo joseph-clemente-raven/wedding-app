@@ -1,6 +1,7 @@
 import AttireGuide from '@/components/AttireGuide'
 import EInvitation from '@/components/EInvitation'
 import Gifts from '@/components/Gifts'
+import Reminder from '@/components/Remider'
 import RSVP from '@/components/RSVP'
 import { setup } from '@/constants/controller'
 import Image from 'next/image'
@@ -20,6 +21,7 @@ export default function Wedding() {
         />
       </div>
       <div className='flex flex-col px-10 pb-10 bg-[#FBFCF8] w-full sm:w-[70%] self-center'>
+        <Reminder/>
         <RSVP/>
         <EInvitation/>
         <AttireGuide/>
