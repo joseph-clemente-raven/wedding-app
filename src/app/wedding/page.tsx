@@ -21,11 +21,11 @@ export default function Wedding() {
         />
       </div>
       <div className='flex flex-col px-10 pb-10 bg-[#FBFCF8] w-full sm:w-[70%] self-center'>
-        <Reminder/>
         <RSVP/>
         <EInvitation/>
         <AttireGuide/>
         <Gifts/>
+        <Reminder/>
       </div>
     </main>
   )
