@@ -10,7 +10,7 @@ import React from 'react'
 export default function Wedding() {
   return (
     <main className='flex flex-col overflow-hidden'>
-      <div className='flex relative h-screen flex-col'>
+      <div className='flex relative h-[70vh] flex-col'>
         <Image
             src={`${setup}GSP-6956.jpg`}
             alt="Banner Image"
@@ -20,7 +20,7 @@ export default function Wedding() {
             className="z-0"
         />
       </div>
-      <div className='flex flex-col px-10 pb-10 bg-[#FBFCF8] w-full sm:w-[70%] self-center'>
+      <div className='flex flex-col pt-10 px-10 pb-10 bg-[#FBFCF8] w-full sm:w-[70%] self-center'>
         <RSVP/>
         <EInvitation/>
         <AttireGuide/>

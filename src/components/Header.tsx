@@ -9,7 +9,7 @@ const tangerineBold = Tangerine({ weight: '700', preload: false });
 
 export default function Header() {
   return (
-    <div className='flex relative h-screen flex-col'>
+    <div className='flex relative h-[70vh] flex-col'>
         <Image
             src={`${setup}GSP-6621.jpg`}
             alt="Banner Image"
