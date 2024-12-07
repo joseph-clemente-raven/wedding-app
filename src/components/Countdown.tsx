@@ -41,16 +41,7 @@ export default function Countdown() {
 
     return (
         <div className='flex relative items-center self-center gap-1 sm:gap-4 flex-row py-16'>
-            {/* <div className='absolute -top-8 -left-96 opacity-30'>
-                <Image
-                    src={`${setup}side3.png`}
-                    width={300}
-                    height={300}
-                    alt='flower'
-                    className='object-cover w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40'
-                />
-            </div> */}
-            <div className="ml-0 sm:ml-6">
+            <div>
                 <p className={`text-xl sm:text-2xl font-semibold text-green-950 ${caladea.className}`}>Kimmy & Joseph</p>
                 <div className='flex flex-row gap-1 sm:gap-6 items-center'>
                     <div className="flex flex-col text-center gap-2">

@@ -9,18 +9,18 @@ export default function Wedding() {
         <div className='flex flex-col pt-10 pb-10 sm:pt-36 sm:pb-10'>
             <div className='flex flex-col gap-2 relative'>
                 <p className='text-center font-semibold text-2xl'>Wedding Details</p><br/>
-                <div className='absolute -top-24 left-0 sm:left-80 opacity-60'>
+                <div className='mx-auto -mt-10'>
                     <Image
                         src={`${setup}line2.png`}
-                        width={300}
+                        width={200}
                         height={5}
-                        alt='line'
-                        objectFit='cover'
+                        alt='flower'
+                        className='object-contain opacity-50'
                     />
                 </div>
                 <p className='text-center font-light'>Join Us as We Say <span className='font-bold'>{`'`} I Do {`'`}</span>: Everything You Need to Know for Our Special Day</p>
             </div>
-            <div className='flex flex-col sm:flex-row py-2 sm:py-10 gap-1 sm:gap-4 px-0'>
+            <div className='flex flex-col sm:flex-row py-2 sm:py-10 gap-2 sm:gap-4 px-0'>
                 <div className='flex flex-1'>
                     <div className='flex flex-col shadow-md p-4 text-center'>
                         <div className='flex flex-1'>
@@ -60,7 +60,7 @@ export default function Wedding() {
                     </div>
                 </div>
                 <div className='flex flex-1'>
-                    <div className='shadow-md p-4 text-center gap-10'>
+                    <div className='shadow-md p-4 text-center gap-10 w-full'>
                         <div className="w-full aspect-square">
                             <Image
                                 src={`${setup}C1.png`}

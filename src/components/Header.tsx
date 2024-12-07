@@ -9,7 +9,7 @@ const tangerineBold = Tangerine({ weight: '700', preload: false });
 
 export default function Header() {
   return (
-    <div className='flex relative h-[70vh] flex-col'>
+    <div className='flex relative h-[70vh] sm:h-screen flex-col'>
         <Image
             src={`${setup}GSP-6621.jpg`}
             alt="Banner Image"
@@ -19,8 +19,8 @@ export default function Header() {
             className="z-0"
         />
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10"></div> */}
-        <div className="absolute inset-0 flex items-end sm:items-center justify-start">
-            <div className="px-2 py-10 sm:px-24 w-full sm:w-1/2">
+        <div className="absolute inset-0 flex items-end justify-start">
+            <div className="px-2 py-10 sm:px-24 md:px-8 w-full sm:w-1/2 md:w-[80vw]">
                 <p className={`text-2xl sm:text-4xl text-outline ${tangerine.className}`}>
                     Dearest Gentle Reader,
                 </p>

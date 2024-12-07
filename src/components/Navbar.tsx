@@ -54,7 +54,7 @@ export default function Navbar() {
                     : 'text-black hover:text-gray-800' // On other pages
                 }`}
               >
-                {href === '/ourstory' ? 'Our Story' : linkText}
+                {href === '/ourstory' ? 'Story' : linkText}
               </Link>
               <span
                 className={`absolute bottom-0 left-0 right-0 h-0.5 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 ${
