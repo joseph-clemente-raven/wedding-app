@@ -75,7 +75,7 @@ export default function OurStoryScreen() {
         </div>
         
         {/* Story 1 */}
-        <div className='flex flex-col sm:flex-row py-16 px-10 gap-6'>
+        <div className='flex flex-col sm:flex-row py-16 px-3 lg:px-10 gap-6'>
           <div className="w-full flex flex-1 p-2">
             <Image
               src={`${setup}GSP-6647.jpg`}
@@ -83,8 +83,7 @@ export default function OurStoryScreen() {
               width={600} // Adjust the width to the original resolution
               height={600} // Adjust the height to the original resolution
               objectFit='cover'
-              style={{ maxHeight: '500px', maxWidth: '284px', objectFit: 'cover' }}
-              className="w-full h-full rounded-full shadow-lg mx-auto border-2 p-2"
+              className="w-full max-h-[800px] max-w-[450px] object-cover h-full rounded-full shadow-lg mx-auto border-2 p-2"
               quality={100} // Ensure maximum image quality
             />
           </div>
@@ -94,7 +93,7 @@ export default function OurStoryScreen() {
         </div>
 
         {/* Story 2 */}
-        <div className='flex flex-col-reverse sm:flex-row px-10 gap-6'>
+        <div className='flex flex-col-reverse sm:flex-row py-16 px-3 lg:px-10 gap-6'>
           <div className='flex flex-1 items-center text-center sm:text-left'>
             <TextWithScrollEffect text={`Even though they lived far apart—Joseph in Bulacan and Kimmy in Cagayan de Oro—he decided to take a leap of faith and visit her. When they finally met in person, it felt magical as they explored the city and created wonderful memories together. Joseph was warmly welcomed by Kimmy's family and friends, who quickly saw how happy they made each other. During his visit, they bought promise rings and made vows at the Malaybalay Church, promising to support one another and keep their love alive despite the challenges they might face. This special moment made their bond even stronger, filling both their hearts with joy.`} />
           </div>
@@ -105,15 +104,14 @@ export default function OurStoryScreen() {
               width={600} // Adjust the width to the original resolution
               height={600} // Adjust the height to the original resolution
               objectFit='cover'
-              style={{ maxHeight: '500px', maxWidth: '284px', objectFit: 'cover' }}
-              className="w-full h-full rounded-full mx-auto shadow-lg p-2"
+              className="w-full max-h-[800px] max-w-[450px] object-cover h-full rounded-full shadow-lg mx-auto border-2 p-2"
               quality={100} // Ensure maximum image quality
             />
           </div>
         </div>
 
         {/* Story 3 */}
-        <div className='flex flex-col sm:flex-row py-16 px-10 gap-6'>
+        <div className='flex flex-col sm:flex-row py-16 px-3 lg:px-10 gap-6'>
           <div className="w-full flex flex-1">
             <Image
               src={`${setup}GSP-7410.jpg`}
@@ -121,8 +119,7 @@ export default function OurStoryScreen() {
               width={600} // Adjust the width to the original resolution
               height={600} // Adjust the height to the original resolution
               objectFit='cover'
-              style={{ maxHeight: '500px', maxWidth: '284px', objectFit: 'cover' }}
-              className="w-full h-full rounded-full mx-auto shadow-lg p-2"
+              className="w-full max-h-[800px] max-w-[450px] object-cover h-full rounded-full shadow-lg mx-auto border-2 p-2"
               quality={100} // Ensure maximum image quality
             />
           </div>
@@ -133,9 +130,6 @@ export default function OurStoryScreen() {
 
         {/* Story 4 */}
         <div className='flex flex-col px-10 gap-6'>
-          <div className='flex flex-1 items-center text-center'>
-            <TextWithScrollEffect text={`As time went by, Joseph realized that Kimmy was the one he wanted to spend his life with. He felt it in his heart and wanted to take the next step in their love story by proposing to her. With excitement and nervousness, he asked for his parents${"'"} blessing, feeling ready to commit to a future together. Their journey is a beautiful example of how love can bridge any distance, bringing joy, laughter, and shared dreams into their lives. Together, Joseph and Kimmy found a love that was real and lasting, proving that when two people are meant to be together, nothing can stand in their way. Their love story is a testament to the power of connection, showing that true love can overcome any barrier.`} />
-          </div>
           <div className="w-full flex">
             <iframe
               className='rounded-lg mx-auto w-full sm:w-1/2 h-96 shadow-lg p-2'
@@ -146,6 +140,9 @@ export default function OurStoryScreen() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
+          </div>
+          <div className='flex flex-1 items-center text-center'>
+            <TextWithScrollEffect text={`As time went by, Joseph realized that Kimmy was the one he wanted to spend his life with. He felt it in his heart and wanted to take the next step in their love story by proposing to her. With excitement and nervousness, he asked for his parents${"'"} blessing, feeling ready to commit to a future together. Their journey is a beautiful example of how love can bridge any distance, bringing joy, laughter, and shared dreams into their lives. Together, Joseph and Kimmy found a love that was real and lasting, proving that when two people are meant to be together, nothing can stand in their way. Their love story is a testament to the power of connection, showing that true love can overcome any barrier.`} />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function Wedding() {
     return (
-        <div className='flex flex-col pt-10 pb-10 sm:pt-36 sm:pb-10'>
+        <div className='flex flex-col px-0 lg:px-20 pt-10 pb-10 sm:pt-36 sm:pb-10'>
             <div className='flex flex-col gap-2 relative'>
                 <p className='text-center font-semibold text-2xl'>Wedding Details</p><br/>
                 <div className='mx-auto -mt-10'>
