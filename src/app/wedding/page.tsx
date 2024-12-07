@@ -11,7 +11,7 @@ import React from 'react'
 export default function Wedding() {
   return (
     <main className='flex flex-col overflow-hidden'>
-      <div className='flex relative h-[70vh] sm:h-screen  flex-col'>
+      <div className='flex relative h-[70vh] sm:h-screen flex-col'>
         <Image
             src={`${setup}GSP-6956.jpg`}
             alt="Banner Image"

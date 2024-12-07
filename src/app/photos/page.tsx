@@ -30,7 +30,7 @@ export default function PhotoScreen() {
           </div>
         </section>
         <hr className='border-3'/>
-        <section className='min-h-[50vh]flex flex-col pt-10'>
+        <section className='min-h-[50vh] flex flex-col pt-10'>
           <p className={`${dancing_script.className} text-4xl text-center`}>Wedding day</p>
           <div className='flex justify-center items-center'>
             <Image
