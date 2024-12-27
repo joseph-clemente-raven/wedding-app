@@ -29,7 +29,7 @@ export default function EInvitation() {
               alt={`Slide ${index + 1}`}
               width={1000} // Adjust dimensions to match your layout
               height={1000}
-              className="max-h-full max-w-full object-contain"
+              className="max-h-full max-w-full object-contain shadow-lg"
               priority={index === 0} // Optimize the first image
             />
           </div>
