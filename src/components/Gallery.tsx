@@ -44,7 +44,7 @@ const gallery = [{
 export default function Gallery() {
     return (
         <div className='flex flex-col relative'>
-            <div className='flex flex-col relative gap-2 mb-3'>
+            <div className='flex flex-col relative px-6 sm:px-60 gap-2 mb-3'>
                 <p className='text-center font-semibold text-2xl text-green-950'>Photos</p>
                 <p className='text-center font-bold text-green-950'>Moments of Forever: A Wedding Journey</p>
                 <p className='text-center font-light text-green-950'>Capture and relive the magic of your wedding day with &quot;Moments of Forever,&quot; a gallery preserving every joyful, heartfelt moment.</p><br/>
@@ -60,12 +60,12 @@ export default function Gallery() {
             </div>
             <div className='flex mt-3 flex-wrap justify-center gap-4'>
                 {gallery.map((item, index) => (
-                    <div key={index} className='relative shadow-lg p-2 w-full sm:w-auto group overflow-hidden border-2 border-gray-200/60 transition-all duration-300'>
+                    <div key={index} className='relative shadow-lg p-2 w-full sm:w-1/3 group overflow-hidden border-2 border-gray-200/60 transition-all duration-300'>
                         <Image
                             src={`${setup}f${item.id}.png`}
                             alt={`gallery ${item.id}`}
-                            width={300}
-                            height={300}
+                            width={400}
+                            height={400}
                             objectFit='cover'
                             className='transition-opacity duration-1000 w-full ease-in-out group-hover:opacity-70'
                         />
