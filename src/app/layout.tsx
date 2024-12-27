@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 
-const inter = Inter({ weight: '400', preload: true });
+const inter = Inter({ weight: '400', preload: false });
 
 export const metadata: Metadata = {
   title: 'Kimmy 💍 Joseph',
@@ -39,11 +39,9 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head />
       <body className={inter.className}>
         <main className="min-h-screen w-full bg-[#eee] flex flex-col">
           <Navbar />
