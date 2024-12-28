@@ -12,7 +12,7 @@ export default function EInvitation() {
     './invitation/1.png',
     './invitation/2.png',
     './invitation/3.png',
-    './invitation/4.png',
+    // './invitation/4.png',
   ]; // Path to images in public folder
 
   // Function to download each image as a separate file
