@@ -37,7 +37,7 @@ export default function Wedding() {
                         <div className='py-4'>
                             <p className='font-semibold'>Church</p>
                             <p className='font-bold'>Our Lady of Mount Carmel Church</p>
-                            <p className='font-light text-xs'>Villarin St., Cagayan De Oro City, Misamis Oriental</p>
+                            <p className='font-light text-xs'>J.V. Seriña St. Carmen, Cagayan De Oro City, Misamis Oriental 9000</p>
                         </div>
                     </div>
                 </div>
