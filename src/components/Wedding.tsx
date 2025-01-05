@@ -72,7 +72,7 @@ export default function Wedding() {
                         </div>
                         <div className='py-4'>
                             <p className='font-semibold text-green-950'>Wedding Day</p>
-                            <p className='font-bold text-green-950'>March 29, 2025 03:00 PM</p>
+                            <p className='font-bold text-green-950'>March 29, 2025 at 03:00 PM</p>
                             <p className='text-xs font-light text-green-950'>Saturday</p>
                         </div>
                     </div>
