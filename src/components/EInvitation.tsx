@@ -17,7 +17,14 @@ export default function EInvitation() {
 
   // Function to download each image as a separate file
   const downloadImages = () => {
-    images.forEach((image, index) => {
+    const eimages = [
+      './invitation/1.png',
+      './invitation/2.png',
+      './invitation/3.png',
+      './invitation/4.png',
+    ]; // Path to images in public folder
+  
+    eimages.forEach((image, index) => {
       // Create an anchor tag programmatically
       const link = document.createElement('a');
       link.href = image;
